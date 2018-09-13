@@ -24,12 +24,14 @@
     <div class="panel">
    <p>Por favor ingresa un nombre de usuario</p>
    </div>
-    <form id="Login" method="POST">
+    <form id="Login" method="POST"><!-- En estas etiquetas te permite crear formularion para la insercion de datos para el cual ser haran los registros utilizando el method="POST"
+                                    permitira que el codigo de php pueda tomas los datos de los formularioc y asi tomar las variables  para almacenarlos-->
 
         <div class="form-group">
 
 
-            <input type="user" class="form-control" name="usuar" placeholder="Ingresa tu usuario">
+            <input type="user" class="form-control" name="usuar" placeholder="Ingresa tu usuario"><!--con  la etiqueta "name" le pondran un nombre a cada formulario y asi poderlo utilizar mas adelante en php
+                                                                                                  con $_POSR para que almacene los datos no olviden siempre ponerle el name y el nombre que quieran-->
 
         </div>
           <p>Por favor ingresa una contraseña</p>
@@ -52,7 +54,7 @@
 
         </div>
           <p>Por favor ingresa una contraseña</p>
-        <div class="form-group">
+        <div class="form-group"> 
 
             <p>Elegir tu genero </p>
             <p>
@@ -70,12 +72,13 @@
 </div>
 <?php
 if($_POST){
-  $u=$_POST['usuar'];
+  $u=$_POST['usuar'];//Guarda los datos insertados con los formularios para que asi se almacenen en la base de datos
   $p=$_POST['contras'];
-  $link=mysqli_connect("localhost","root","");
-mysqli_select_db($link,"usuarios");
-mysqli_query($link,"insert into personan value ('$a','$b')");
-mysqli_close($link);
+  $link=mysqli_connect("localhost","root","");//Permite la conexion con el host local de xampp y asi poder seleccionar las bases de datos
+mysqli_select_db($link,"hii");// se selecciona la base de datos para que puedan seleccionar la tabla creada en la misma base de datos
+mysqli_query($link,"insert into hiii value ('$u','$p')");// esta se utiliza para consultas ya que permite la conexion con la cual se guardan los datos de los formularios ya que en la instrccion INSERT INTO el hiii indica el nombre de la tabla para que asi 
+                                                        // se pueda guardar los datos y las variables $u y $p son los datos que se guardaran ya que se han tomado de los formularios
+mysqli_close($link);//Cierra, acaba o finaliza con la conexion en la base de datos en la cual se esta conectando ya que finaliza todas las tareas que se le dieron a las variables
 }
 ?>
 </html>
