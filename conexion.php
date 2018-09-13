@@ -1,11 +1,10 @@
-<?php
-if($_POST){
-	$a=$_POST["trabajador"];
-	$b=$_POST["edad"];
-$link=mysqli_connect("localhost","root","");
-mysqli_select_db($link,"prueba");
-mysqli_query($link,"insert into personal value ('$a','$b')");
-mysqli_close($link);
-Echo "<font color='Green' size=10><b>Registro almacenado</b></font>";
-}
-?>
+ <?php
+ $conectar=mysqli_connect('localhost','root','');
+  $base=mysqli_select_db('usuarios');
+  $user=$_POST['Usuar'];
+  $pass=$_POST['contras'];
+  $are=$_POST['OS'];
+  $sql="INSERT INTO personan VALUES('$user','$pass')";
+  $ejecutar=mysqli_query($sql);
+  echo"Registro Exitoso";
+  ?>

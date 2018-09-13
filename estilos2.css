@@ -1,0 +1,26 @@
+body{
+	background-image: url(pc3.jpg);
+	background-size: cover;
+
+}
+nav.navbar {
+    background-color: #25236d;
+}
+.loginBox {
+  background-color: white;
+  position: absolute;
+  color: white;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  width: 350px;
+  height: 350px;
+  padding: 20px 40px;
+  box-sizing: border-box;
+  border-width: 200px;
+  background: rgba(0,0,0,.5);
+}
+h2{
+	margin: 0;
+	padding: 0 0 20px;
+}

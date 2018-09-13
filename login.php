@@ -4,18 +4,20 @@
 	<meta charset="UTF-8">
 	<title>Login</title>
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="estilos2.css">
   <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
   <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 </head>
 <body background="#A9A9A9">
-<nav class="navbar navbar-expand-lg navbar-light bg-light">
-  <a class="navbar-brand" href="login.php"><img src="instituto-tecnologico-tlaxcala.jpg" width="30" height="30" alt="">Insituto Tecnologico de Tlaxcala</a>
+<nav class="navbar navbar-expand-lg navbar-dark">
+  <a class="navbar-brand" href="login.php"><img src="instituto-tecnologico-tlaxcala.jpg" width="30" height="30" alt="">Instituto Tecnologico de Tlaxcala</a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
 </nav>
 
-<div class="container-fluid">
+<div class="loginBox">
+<div class="user">
 <h1 class="form-heading">Inicia Sesion</h1>
 <div class="login-form">
 <div class="main-div">
@@ -37,7 +39,7 @@
 
         </div>
         <div class="forgot">
-        <a href="reset.html">Olvidaste tu contraseña?</a>
+        <a href="reset.html">¿Olvidaste tu contraseña?</a>
         <div class="forgot">
       <a href="registro.php">¿No tienes cuenta? Registrate</a>
     </div>
@@ -47,6 +49,7 @@
     </form>
     </div>
 </div></div></div>
+
 
 
 </body>
