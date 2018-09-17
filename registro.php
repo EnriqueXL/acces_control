@@ -75,10 +75,10 @@ if($_POST){
   $u=$_POST['usuar'];//Guarda los datos insertados con los formularios para que asi se almacenen en la base de datos
   $p=$_POST['contras'];
   $link=mysqli_connect("localhost","root","");//Permite la conexion con el host local de xampp y asi poder seleccionar las bases de datos
-mysqli_select_db($link,"hii");// se selecciona la base de datos para que puedan seleccionar la tabla creada en la misma base de datos
-mysqli_query($link,"insert into hiii value ('$u','$p')");// esta se utiliza para consultas ya que permite la conexion con la cual se guardan los datos de los formularios ya que en la instrccion INSERT INTO el hiii indica el nombre de la tabla para que asi 
-                                                        // se pueda guardar los datos y las variables $u y $p son los datos que se guardaran ya que se han tomado de los formularios
-mysqli_close($link);//Cierra, acaba o finaliza con la conexion en la base de datos en la cual se esta conectando ya que finaliza todas las tareas que se le dieron a las variables
+    mysqli_select_db($link,"hii");// se selecciona la base de datos para que puedan seleccionar la tabla creada en la misma base de datos
+    mysqli_query($link,"insert into hiii value ('$u','$p')");// esta se utiliza para consultas ya que permite la conexion con la cual se guardan los datos de los formularios ya que en la instrccion INSERT INTO el hiii indica el nombre de la tabla para que asi 
+                                                            // se pueda guardar los datos y las variables $u y $p son los datos que se guardaran ya que se han tomado de los formularios
+    mysqli_close($link);//Cierra, acaba o finaliza con la conexion en la base de datos en la cual se esta conectando ya que finaliza todas las tareas que se le dieron a las variables
 }
 ?>
 </html>
